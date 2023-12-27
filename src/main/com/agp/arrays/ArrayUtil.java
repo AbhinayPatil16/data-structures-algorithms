@@ -9,7 +9,8 @@ public class ArrayUtil {
         input[0] = 1;
         input[1] = 2;
         input[2] = 3;
-        System.out.println(findMissingNumberInArray(new int[]{1,2,3,4,6}));
+        System.out.println(findTopTwoScores(new int[]{1,2,3,4,6}));
+
     }
 
     /*
@@ -54,6 +55,8 @@ public class ArrayUtil {
                 secondHighest = score;
             }
         }
+        System.out.println("First Highest - "+firstHighest);
+        System.out.println("Second Highest - "+secondHighest);
         return new int[]{firstHighest,secondHighest};
     }
 
